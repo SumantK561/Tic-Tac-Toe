@@ -1,11 +1,11 @@
 import { StyleSheet, View } from 'react-native';
 import Game from './src/Game';
-import { LinearGradient } from 'expo-linear-gradient'
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function App() {
   return (
     <LinearGradient 
-    colors={['#3498db','#fffff']}
+    colors={['#3498db','#ffffff']}
     style={styles.container}
     >
       <View style={styles.overlay}>

@@ -8,9 +8,9 @@ const Board = ({ board, onPress }) => {
                 <View key={rowIndex} style={styles.row}>
                     {row.map((cell, cellIndex) => (
                         <TouchableOpacity key ={cellIndex} style={styles.cell} onPress={() => onPress(rowIndex,cellIndex)}>
-                            <View style = {styles.cellText}>
+                            <Text style = {styles.cellText}>
                                 {cell}
-                            </View>
+                            </Text>
 
                         </TouchableOpacity>
                     ))}
@@ -38,6 +38,5 @@ const styles = StyleSheet.create({
     },
     cellText: {
         fontSize: 36,
-        
     }
 })
